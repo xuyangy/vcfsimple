@@ -1,5 +1,5 @@
 #simple
-lify vcf files for downstream annotations
+list vcf files for downstream annotations
 NOTE:
 
 Right now at initial stage!
@@ -10,3 +10,6 @@ Todo:
 4.
 5.
 6.
+7.
+8.
+9.
