@@ -12,3 +12,4 @@ str.cas
 a = dict(a='a', b='b')
 a.keys
 b = 3
+for git show  ":file"
