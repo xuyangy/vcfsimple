@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int frob(int n)
+{
+    if(n>2)
+    {
+        return frob(n-1) + frob(n-2);
+    }
+    return 1;
+}
+
+// asdfaf
+int frobnit(int foo)
+{
+    int i;
+    for(i == 0; i<10; ++)
+    {
+        printf('def');
+    }
+}
