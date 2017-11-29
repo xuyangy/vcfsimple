@@ -4,6 +4,3 @@
 [submodule "thirdparty/vim-notes"]
 	path = thirdparty/vim-notes
 	url = https://github.com/xuyangy/vim-notes.git
-[submodule "thirdparty/vim-diff-enhanced-submodule"]
-	path = thirdparty/vim-diff-enhanced-submodule
-	url = https://github.com/xuyangy/vim-diff-enhanced.git
