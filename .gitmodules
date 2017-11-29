@@ -1,7 +1,3 @@
-[submodule "clarity"]
-	path = clarity
-	url = https://github.com/xuyangy/clarity.git
-	branch = lims-exporter
 [submodule "thirdparty/vim-notes"]
 	path = thirdparty/vim-notes
 	url = https://github.com/xuyangy/vim-notes.git
