@@ -1,0 +1,3 @@
+[submodule "thirdparty/vim-notes"]
+	path = thirdparty/vim-notes
+	url = https://github.com/xuyangy/vim-notes.git
