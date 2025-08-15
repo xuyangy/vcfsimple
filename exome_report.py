@@ -19,7 +19,7 @@ logging.basicConfig(level=logging.DEBUG)
 log = logging.getLogger('ExomeReport')
 
 
-class ExomeReport(object):
+class ExomeReporting(object):
 
     FILTER_CRITERIAS = [
         ('inDB_alleleFreq', 0.05),
@@ -39,7 +39,7 @@ class ExomeReport(object):
         """
         Checks whether a variant is +6/-20 bp into intronic region.
         """
-        match = re.match(ExomeReport.HGVS_INTRON_RE, hgvs)
+        match = re.match(ExomeReporting.HGVS_INTRON_RE, hgvs)
         criterias = {
             '+': 6,
             '-': 20
@@ -143,7 +143,7 @@ class ExomeReport(object):
     def _filter_line(line):
 
         criteria_check = dict()
-        for name, threshold in ExomeReport.FILTER_CRITERIAS:
+        for name, threshold in ExomeReporting.FILTER_CRITERIAS:
             val = line[name]
             if val == 'N/A':
                 criteria_check[name] = False
@@ -165,7 +165,7 @@ class ExomeReport(object):
                                                        x['Consequence'],
                                                        x['ExAC_TOT']))
 
-        filtered_lines = [line for line in lines if not ExomeReport._filter_line(line)]
+        filtered_lines = [line for line in lines if not ExomeReporting._filter_line(line)]
 
         if excel:
             # Lazy import to avoid unneccessary dependencies
@@ -227,7 +227,7 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
 
-    ssr = ExomeReport(
+    ssr = ExomeReporting(
         args.input,
         args.transcripts
     )
